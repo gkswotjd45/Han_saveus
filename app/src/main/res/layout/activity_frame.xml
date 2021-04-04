@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/frToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:weight = "1"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/tabBack"
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_gravity="bottom||left" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/tabMain"
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_gravity="bottom||center" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/tabEnd"
+        android:layout_width="133dp"
+        android:layout_height="61dp"
+        android:layout_gravity="bottom||right" />
+
+</FrameLayout>
